@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping; // Serve para mapear o método GET
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping; // Serve para mapear a URL
 import org.springframework.web.bind.annotation.RestController; // Serve para indicar que a classe é um controlador REST
 
@@ -16,7 +17,7 @@ public class ControllerProduto {
 
 
     @PostMapping
-    public ResponseEntity <String> create() {
+    public ResponseEntity <String> create(@RequestBody Produtos produto) {
         return ResponseEntity.status(201).body("Produto criado!");
     }
 
