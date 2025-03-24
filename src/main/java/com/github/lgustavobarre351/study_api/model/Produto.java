@@ -1,6 +1,6 @@
-package com.github.lgustavobarre351.study_api;
+package com.github.lgustavobarre351.study_api.model;
 
-public class Produtos {
+public class Produto {
     private Long id;
     private String nome;
     

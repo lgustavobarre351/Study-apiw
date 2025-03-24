@@ -1,6 +1,6 @@
 //Commit
 
-package com.github.lgustavobarre351.study_api;
+package com.github.lgustavobarre351.study_api.controller;
 
 import org.springframework.web.bind.annotation.GetMapping; // Serve para mapear o método GET
 import org.springframework.web.bind.annotation.RequestMapping; // Serve para mapear a URL
